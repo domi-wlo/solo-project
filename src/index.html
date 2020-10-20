@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="row side-bar-top col-sm-12 col-md-2">
                     <h2 class="page-name"> Just do it </h2>
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars hamburger"></i>
                 </div>
                 <div class="main-content-top col-sm-12 col-md-10">
                     <ul class="row items">
@@ -62,14 +62,14 @@
                 <div class="main-content col-sm-12 col-md-10">
                     <article class="general">
                         <div class="header">
-                            <h1>General Statistic</h1>
+                            <h1> General Statistic </h1>
                         </div>
-                        <div class="subsection calendar">
+                        <div class="subsection calendar flatpickr">
                             <div class="date-picker">
-                                <input type="text" name="date">
+                                <input type="text" name="date" placeholder="Select Date..." class="calendar-date-input">
                             </div>
-                            <div class="button-refresh">
-                                <img src="images/refresh.svg" alt="refresh">
+                            <div class="button-refresh input-button" title="clear" data-clear>
+                                <img src="images/refresh.svg" alt="refresh" class="icon-close">
                             </div>
                         </div>
                         <div class="subsection statistics">
@@ -101,6 +101,27 @@
                             </div>
                         </div>
                     </article>
+                    <article class="links">
+                        <div class="header">
+                            <h1> Links </h1>
+                        </div>
+                        <div class="subsection links-content">
+                            <button class="btn-standard"> + add new </button>
+                        </div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="subsection links-content">
+                            <button class="btn-standard"> + add new </button>
+                        </div>
+                    </article>    
                     <div class="main-content-top mobile col-sm-12">
                         <ul class="row items">
                             <li class="item col-sm-12"><a href="#"><img src="images/wallet.svg" alt="officer"><strong>$1,500.00</strong><img src="images/arrow-down-small.svg" class="small" alt="officer"></a></li>
@@ -114,6 +135,8 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

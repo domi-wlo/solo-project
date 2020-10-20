@@ -18,8 +18,7 @@ h1 {
 
 .container {
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
+  margin: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -63,58 +62,23 @@ article {
   }
 }
 
-
-/* Mixins */
-
-@mixin grid($prefix) {
-  @for $i from 1 through 12 {
-    .col-#{$prefix}-#{$i} {
-      $width: 100% / 12 * $i;
-      flex: 0 0 $width;
-      max-width: $width;
-    }
-  }
-}
-
-@media(max-width: 767px) {
-  @include grid('sm');
-  .side-bar-menu {
-    display: none;
-  }
-
-  .main-content-top {
-    display: none;
-  }
-
-  .main-content {
-    .mobile {
-      display: block;
-      margin-bottom: 10px;
-      border-left: solid 1px $brand-third-color;
-
-      .item {
-        border-bottom: 1px solid $brand-third-color;
-      }
-    }
-  }
-}
-
-@media(min-width: 768px) {
-  @include grid('md');
-}
-
-@media(min-width: 992px) {
-  @include grid('lg');
-}
-
-@media(min-width: 1200px) {
-  @include grid('xl');
+.btn-standard {
+  color: $color-light;
+  background-color: $brand-main-color;
+  border-color: $brand-main-color;
+  border-radius: $radius;
+  height: 40px;
+  width: 120px;
 }
 
 /* top bar */
 
 .mobile { 
   display: none;
+}
+
+.show {
+  display: block;
 }
 
 .side-bar-top {
@@ -133,6 +97,7 @@ article {
   i {
     font-size: 18px;
     color: $color-light;
+    cursor: pointer;
   }
 }
 
@@ -183,6 +148,10 @@ article {
         width: 20px;
         padding-bottom: 5px;
       }
+
+      &:hover {
+        background-color: $color-hover-dark;
+      }
     } 
   }
 }
@@ -208,8 +177,9 @@ article {
       align-items: center;
 
       &:hover {
-        background-color: $color-hover;
-        border-left: 4px solid orange;
+        background-color: $color-hover-dark;
+        border-left: 4px solid $brand-main-color;
+        cursor: pointer;
 
         a {
           color: $color-light;
@@ -275,6 +245,10 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  .calendar-date-input {
+    color: $brand-font;
+  }
 
   img {
     fill: $color-light;
@@ -283,6 +257,11 @@ article {
     padding: 10px;
     background-color: $brand-main-color;
     border-radius: $radius;
+
+    &:hover {
+      background-color: $color-hover-light;
+      cursor: pointer;
+    }
   }
 
   .button-refresh {
@@ -325,5 +304,16 @@ article {
     img {
       width: 100%;
     }
+  }
+}
+
+/* links */
+
+.links {
+
+  .links-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
