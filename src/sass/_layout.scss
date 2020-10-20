@@ -34,6 +34,7 @@ h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 input {
@@ -150,7 +151,7 @@ article {
       }
 
       &:hover {
-        background-color: $color-hover-dark;
+        background-color: $color-background;
       }
     } 
   }
@@ -162,7 +163,7 @@ article {
   background-color: $color-dark;
 }
 
-.links {
+.categories {
   padding: 0;
 
   ul {
@@ -310,10 +311,57 @@ article {
 /* links */
 
 .links {
-
   .links-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .links-list {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    border-top: solid 1px $brand-third-color;
+    font-size: 13px;
+
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-bottom: solid 1px $brand-third-color;
+      color: $color-font-1;
+      justify-content: space-around;
+
+      p, a {
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      .links-icons {
+        margin-left: 30px;
+
+        img {
+          visibility: hidden;
+          padding: 5px;
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      &:hover {
+        background-color: $color-background;
+
+        img {
+          visibility: visible;
+        }
+      }
+    }
   }
 }

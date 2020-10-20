@@ -1,47 +1,65 @@
 /* Mixins */
 
 @mixin grid($prefix) {
-    @for $i from 1 through 12 {
-      .col-#{$prefix}-#{$i} {
-        $width: 100% / 12 * $i;
-        flex: 0 0 $width;
-        max-width: $width;
+  @for $i from 1 through 12 {
+    .col-#{$prefix}-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}
+  
+@media(max-width: 767px) {
+  @include grid('sm');
+
+  .side-bar-menu {
+    display: none;
+  }
+
+  .main-content-top {
+    display: none;
+  }
+
+  .main-content {
+    .mobile {
+      display: block;
+      margin-bottom: 10px;
+      border-left: solid 1px $brand-third-color;
+
+      .item {
+        border-bottom: 1px solid $brand-third-color;
       }
     }
   }
-  
-  @media(max-width: 767px) {
-    @include grid('sm');
-  
-    .side-bar-menu {
-      display: none;
-    }
-  
-    .main-content-top {
-      display: none;
-    }
-  
-    .main-content {
-      .mobile {
-        display: block;
-        margin-bottom: 10px;
-        border-left: solid 1px $brand-third-color;
-  
-        .item {
-          border-bottom: 1px solid $brand-third-color;
+
+  .links {
+    ul {
+      li {
+        flex-direction: column !important;
+
+        &:hover {
+          img {
+            display: block;
+          }
         }
       }
+
+      img {
+        display: none;
+      }
     }
   }
-  
-  @media(min-width: 768px) {
-    @include grid('md');
-  }
-  
-  @media(min-width: 992px) {
-    @include grid('lg');
-  }
-  
-  @media(min-width: 1200px) {
-    @include grid('xl');
-  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+}
