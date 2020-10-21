@@ -13,24 +13,29 @@
 @media(max-width: 767px) {
   @include grid('sm');
 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-bar {
+    position: sticky !important;
+    top: 0;
+    width: 100% !important;
+  }
+
   .side-bar-menu {
     display: none;
+    order: 1;
   }
-
-  .main-content-top {
-    display: none;
+  
+  .top-bar {
+    margin-left: 0 !important;
+    order: 4;
   }
-
-  .main-content {
-    .mobile {
-      display: block;
-      margin-bottom: 10px;
-      border-left: solid 1px $brand-third-color;
-
-      .item {
-        border-bottom: 1px solid $brand-third-color;
-      }
-    }
+  
+  .content {
+    margin-left: 0 !important;
   }
 
   .links {

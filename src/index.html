@@ -12,55 +12,53 @@
 </head>
 <body>
 
-    <nav id="side-bar">
-        <div class="container">
-            <div class="row">
-                <div class="row side-bar-top col-sm-12 col-md-2">
-                    <h2 class="page-name"> Just do it </h2>
-                    <i class="fas fa-bars hamburger"></i>
-                </div>
-                <div class="main-content-top col-sm-12 col-md-10">
-                    <ul class="row items">
-                        <li class="item"><a href="#"><img src="images/quit.svg" alt="officer"></a></li>
-                        <li class="item"><a href="#" class="link"><img src="images/profile.svg" alt="officer">Lana Del Rey</a></li>
-                        <li class="item"><a href="#"><img src="images/notification.svg" alt="officer"></a></li>
-                        <li class="item"><a href="#"><img src="images/wallet.svg" alt="officer"><strong>$1,500.00</strong><img src="images/arrow-down-small.svg" class="small" alt="officer"></a></li>
-                    </ul>
+    <nav id="side-bar" class="side-bar">
+        <div class="side-bar-top row">
+            <h2 class="page-name col-md-10"> Just do it </h2>
+            <i class="fas fa-bars hamburger col-md-2"></i>
+        </div>
+        <div class="side-bar-menu">
+            <div class="categories">
+                <ul>
+                    <li><img src="images/general.svg" alt="general"><a href="#general">General </a></li>
+                    <li><img src="images/details.svg" alt="detials"><a href="#details"> Details </a></li>
+                    <li><img src="images/links.svg" alt="links"><a href="#links"> Links </a></li>
+                    <li><img src="images/banners.svg" alt="banners"><a href="#banners"> Banners </a></li>
+                    <li><img src="images/personaldata.svg" alt="personaldata"><a href="#personaldata"> Personal data </a></li>
+                    <li><img src="images/payout.svg" alt="payout"><a href="#payout"> Payout </a></li>
+                    <li><img src="images/postback.svg" alt="postback"><a href="#postback"> Postback </a></li>
+                </ul>
+            </div>
+            <div class="separate"></div>
+            <div class="container manager-info">
+                <h2>Your Manager</h2>
+                <div class="row">
+                    <div class="avatar">
+                        <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/businessman-310819_1280.png" alt="officer">
+                    </div>
+                    <div>
+                        <p> Michael S.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section id="content">
-        <div class="container">
+    <nav id="top-bar" class="top-bar">
+        <div class="top-bar-content">
+            <ul class="row items">
+                <li class="item quit"><a href="#"><img src="images/quit.svg" alt="quit"></a></li>
+                <li class="item"><a href="#" class="link"><img src="images/profile.svg" alt="profile">Lana Del Rey</a></li>
+                <li class="item"><a href="#"><img src="images/notification.svg" alt="notification"></a></li>
+                <li class="item"><a href="#"><img src="images/wallet.svg" alt="wallet"><strong>$1,500.00</strong><img src="images/arrow-down-small.svg" class="small" alt="officer"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="content" class="content">
             <div class="row">
-                <div class="side-bar-menu col-sm-12 col-md-2">
-                    <div class="container categories">
-                        <ul>
-                            <li><img src="images/general.svg" alt="general"><a href="#">General </a></li>
-                            <li><img src="images/details.svg" alt="detials"><a href="#"> Details </a></li>
-                            <li><img src="images/links.svg" alt="links"><a href="#"> Links </a></li>
-                            <li><img src="images/banners.svg" alt="banners"><a href="#"> Banners </a></li>
-                            <li><img src="images/personaldata.svg" alt="personaldata"><a href="#"> Personal data </a></li>
-                            <li><img src="images/payout.svg" alt="payout"><a href="#"> Payout </a></li>
-                            <li><img src="images/postback.svg" alt="postback"><a href="#"> Postback </a></li>
-                        </ul>
-                    </div>
-                    <div class="separate"></div>
-                    <div class="container manager-info">
-                        <h2>Your Manager</h2>
-                        <div class="row">
-                            <div class="avatar">
-                                <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/businessman-310819_1280.png" alt="officer">
-                            </div>
-                            <div>
-                                <p> Michael S.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-content col-sm-12 col-md-10">
-                    <article class="general">
+                <div class="main-content">
+                    <article id="general" class="general">
                         <div class="header">
                             <h1> General Statistic </h1>
                         </div>
@@ -101,14 +99,14 @@
                             </div>
                         </div>
                     </article>
-                    <article class="links">
+                    <article id="links" class="links">
                         <div class="header">
                             <h1> Links </h1>
                         </div>
                         <div class="subsection links-content">
                             <button class="btn-standard"> + add new </button>
                             <div class="row links-list">
-                                <ul class="col-md-12">
+                                <ul class="col-md-10">
                                     <li>
                                         <p class="col-md-4 link-title">Home Page</p>
                                         <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
@@ -178,18 +176,42 @@
                             <button class="btn-standard"> + add new </button>
                         </div>
                     </article>    
-                    <div class="main-content-top mobile col-sm-12">
-                        <ul class="row items">
-                            <li class="item col-sm-12"><a href="#"><img src="images/wallet.svg" alt="officer"><strong>$1,500.00</strong><img src="images/arrow-down-small.svg" class="small" alt="officer"></a></li>
-                            <li class="item col-sm-12"><a href="#"><img src="images/notification.svg" alt="officer"></a></li>
-                            <li class="item col-sm-12"><a href="#" class="link"><img src="images/profile.svg" alt="officer">Lana Del Rey</a></li>
-                            <li class="item col-sm-12"><a href="#"><img src="images/quit.svg" alt="officer"></a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-        </div>
     </section>
+
+    <div class="overlay" id="overlay">
+
+        <div class="modal quitModal" id="quitModal">
+          <div class="btn-close close-modal"> x </div>
+          <h4> Do you really wanna quit?</h4>
+          <button class="btn-standard close-modal"> Okay </button>
+        </div>
+
+        <div class="modal chatModal" id="chatModal">
+            <div class="header">
+                <h1> Online Chat with your Manager </h1>
+                <div class="btn-close close-modal"> x </div>
+            </div>
+            <div class="row manager-info">
+                <div class="avatar">
+                    <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/businessman-310819_1280.png" alt="officer">
+                </div>
+                <div>
+                    <p> Michael S.</p>
+                </div>
+            </div>
+            <div id="chat">
+                <img src="images/chat.PNG" alt="chat">
+            </div>
+            <form class="message-send">
+                <input name="message" placeholder="Send message" autocomplete="off">
+                <button class="btn-standard-small close-modal"> Send </button>
+            </form>
+            
+        </div>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/script.js"></script>
