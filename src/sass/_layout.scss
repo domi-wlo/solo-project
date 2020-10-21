@@ -132,7 +132,7 @@ article {
   align-items: center;
   
   h4 {
-    border-bottom: solid 1px $brand-third-color
+    border-bottom: solid 1px $brand-third-color;
   }
 }
 
@@ -439,7 +439,6 @@ article {
 /* links */
 
 .links {
-
   .links-content {
     display: flex;
     flex-direction: column;
@@ -481,13 +480,13 @@ article {
 
       .links-icons {
         margin-left: 30px;
+      }
 
-        img {
-          visibility: hidden;
-          padding: 5px;
-          height: 25px;
-          width: 25px;
-        }
+      img {
+        visibility: hidden;
+        padding: 5px;
+        height: 25px;
+        width: 25px;
       }
 
       &:hover {
