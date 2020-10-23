@@ -44,5 +44,8 @@
         "onchange": "^5.2.0",
         "stylelint": "^9.10.1",
         "stylelint-scss": "^3.5.4"
+    },
+    "publishConfig": { 
+        "registry": "https://npm.pkg.github.com/" 
     }
 }
