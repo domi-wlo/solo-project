@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Indywidualny 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav id="side-bar" class="side-bar">
+        <div class="side-bar-top row">
+            <h2 class="page-name col-md-10"> Just do it </h2>
+            <i class="fas fa-bars hamburger col-md-2"></i>
+        </div>
+        <div class="side-bar-menu">
+            <div class="categories">
+                <ul>
+                    <li><img src="images/general.svg" alt="general"><a href="#general">General </a></li>
+                    <li><img src="images/details.svg" alt="detials"><a href="#details"> Details </a></li>
+                    <li><img src="images/links.svg" alt="links"><a href="#links"> Links </a></li>
+                    <li><img src="images/banners.svg" alt="banners"><a href="#banners"> Banners </a></li>
+                    <li><img src="images/personaldata.svg" alt="personaldata"><a href="#personaldata"> Personal data </a></li>
+                    <li><img src="images/payout.svg" alt="payout"><a href="#payout"> Payout </a></li>
+                    <li><img src="images/postback.svg" alt="postback"><a href="#postback"> Postback </a></li>
+                </ul>
+            </div>
+            <div class="separate"></div>
+            <div class="container manager-info">
+                <h2>Your Manager</h2>
+                <div class="row">
+                    <div class="avatar">
+                        <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/businessman-310819_1280.png" alt="officer">
+                    </div>
+                    <div>
+                        <p> Michael S.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="top-bar" class="top-bar">
+        <div class="top-bar-content">
+            <ul class="row items">
+                <li class="item quit"><a href="#"><img src="images/quit.svg" alt="quit"></a></li>
+                <li class="item"><a href="#" class="link"><img src="images/profile.svg" alt="profile">Lana Del Rey</a></li>
+                <li class="item"><a href="#"><img src="images/notification.svg" alt="notification"></a></li>
+                <li class="item"><a href="#"><img src="images/wallet.svg" alt="wallet"><strong>$1,500.00</strong><img src="images/arrow-down-small.svg" class="small" alt="officer"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="content" class="content">
+            <div class="row">
+                <div class="main-content">
+                    <article id="general" class="general">
+                        <div class="header">
+                            <h1> General Statistic </h1>
+                        </div>
+                        <div class="subsection calendar flatpickr">
+                            <div class="date-picker">
+                                <input type="text" name="date" placeholder="Select Date..." class="calendar-date-input">
+                            </div>
+                            <div class="button-refresh input-button" title="clear" data-clear>
+                                <img src="images/refresh.svg" alt="refresh" class="icon-close">
+                            </div>
+                        </div>
+                        <div class="subsection statistics">
+                            <div class="row">
+                                <div class="col-sm-10 col-md-6 data-col">
+                                    <div class="row stat-data">
+                                        <p>Visit Signups</p>
+                                        <p class="value">124</p>
+                                    </div>
+                                    <div class="row stat-data">
+                                        <p>FTD</p>
+                                        <p class="value">564</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 col-md-6 data-col">
+                                    <div class="row stat-data">
+                                        <p>New Deposit</p>
+                                        <p class="value">445</p>
+                                    </div>
+                                    <div class="row stat-data">
+                                        <p>Turn Over</p>
+                                        <p class="value">432</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row chart">
+                                <p>Chart</p>
+                                <!-- <img src="images/chart.png" alt="chart"> -->
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="links" class="links">
+                        <div class="header">
+                            <h1> Links </h1>
+                        </div>
+                        <div class="subsection links-content">
+                            <button class="btn-standard"> + add new </button>
+                            <div class="row links-list">
+                                <ul class="col-md-10">
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="col-md-4 link-title">Home Page</p>
+                                        <a href="#" class="col-md-4 link-address">http://www.homepage.com</a>
+                                        <p class="col-md-2 links-icons">
+                                            <a href="#"><img src="images/links.svg" alt="links"></a>
+                                            <a href="#"><img src="images/trash.svg" alt="trash"></a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-standard"> + add new </button>
+                        </div>
+                    </article>    
+                </div>
+            </div>
+    </section>
+
+    <div class="overlay" id="overlay">
+
+        <div class="modal quitModal" id="quitModal">
+          <div class="btn-close close-modal"> x </div>
+          <h4> Do you really wanna quit?</h4>
+          <button class="btn-standard close-modal"> Okay </button>
+        </div>
+
+        <div class="modal chatModal" id="chatModal">
+            <div class="header">
+                <h1> Online Chat with your Manager </h1>
+                <div class="btn-close close-modal"> x </div>
+            </div>
+            <div class="row manager-info">
+                <div class="avatar">
+                    <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/businessman-310819_1280.png" alt="officer">
+                </div>
+                <div>
+                    <p> Michael S.</p>
+                </div>
+            </div>
+            <div id="chat">
+                <img src="images/chat.PNG" alt="chat">
+            </div>
+            <form class="message-send">
+                <input name="message" placeholder="Send message" autocomplete="off">
+                <button class="btn-standard-small close-modal"> Send </button>
+            </form>
+            
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
